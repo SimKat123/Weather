@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href = "./Assets/style.css" />
+    <title>Weather Around the World</title>
+</head>
+
+<body>
+    <header class="hero is-small is-link">
+        <div class="hero-body">
+            <h1 class=" is-size-1 title has-text-centered">Weather Dashboard</h1>
+        </div>
+    </header>
+<!-- Search box with search button -->
+    <div class = "section box container">
+        <h2 class="is-size-4">
+            Search for a City:
+        </h2>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Type in City Name" id="input">
+                    </div>
+                </div>
+                <button type="submit" class="button is-link is-light is-outlined mt-3" id="searchBtn">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- Search History -->
+
+    <div class="columns">
+        <div class="column is-narrow">
+            <div class="box" style="width: 200px;">
+                <p class="title is-5">Search History</p>
+                    <div class="card" id="olcCity">
+                        <div class="card-content">
+                            <p class="content has-text-centered" id="cityName">
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div> 
+        <div class="column hidden">
+            <div class="box">
+                <p class="title is-5" id="cityDisplay">
+                    <i class="icons"></i>
+                </p>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="content has-text-left" id="temp">
+                        </p>
+                        <p class="content has-text-left" id="wind">
+                        </p>
+                        <p class="content has-text-left" id="humid">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"></script>
+    <script type="text/javascript" src="./Assets/javascript.js"></script>
+</body>
+</html>
