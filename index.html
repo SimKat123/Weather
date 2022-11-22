@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href = "./Assets/style.css" />
     <title>Weather Around the World</title>
 </head>
@@ -34,33 +33,67 @@
             </div>
         </div>
     </div>
-<!-- Search History -->
 
     <div class="columns">
         <div class="column is-narrow">
             <div class="box" style="width: 200px;">
                 <p class="title is-5">Search History</p>
-                    <div class="card" id="olcCity">
-                        <div class="card-content">
-                            <p class="content has-text-centered" id="cityName">
-                            </p>
+                    <div class="card">
+                        <div class="card-content" id="oldCity">
+                            <button class="content has-text-centered" id="cityName">
+                            </button>
                         </div>
                     </div>
             </div>
         </div> 
-        <div class="column hidden">
-            <div class="box">
-                <p class="title is-5" id="cityDisplay">
-                    <i class="icons"></i>
-                </p>
+
+        <div class="column">
+            <div class="box has-text-left">
+                <p class="title is-5" id="cityDisplay"> </p>
                 <div class="card">
                     <div class="card-content">
-                        <p class="content has-text-left" id="temp">
-                        </p>
-                        <p class="content has-text-left" id="wind">
-                        </p>
-                        <p class="content has-text-left" id="humid">
-                        </p>
+                        <p class="content" id="temp"></p>
+                        <p class="content" id="wind"></p>
+                        <p class="content" id="humid"></p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="columns is-mobile is-multiline pl-2 has-text-centered has-background-link-light">
+                        <div class="column is-1.5">
+                            <p class="title is-5" id="one"></p>
+                            <p class="content" id="tempOne"></p>
+                            <p class="content" id="windOne"></p>
+                            <p class="content" id="humidOne"></p>
+                        </div>
+
+                        <div class="column is-1.5">
+                            <p class="title is-5" id="two"></p>
+                            <p class="content" id="tempTwo"></p>
+                            <p class="content" id="windTwo"></p>
+                            <p class="content" id="humidTwo"></p>
+                        </div>
+
+                        <div class="column is-1.5">
+                            <p class="title is-5" id="three"></p>
+                            <p class="content" id="tempThree"></p>
+                            <p class="content" id="windThree"></p>
+                            <p class="content" id="humidThree"></p>
+                        </div>
+
+                        <div class="column is-1.5">
+                            <p class="title is-5" id="four"></p>
+                            <p class="content" id="tempFour"></p>
+                            <p class="content" id="windFour"></p>
+                            <p class="content" id="humidFour"></p>
+                        </div>
+
+                        <div class="column is-1.5">
+                            <p class="title is-5" id="five"></p>
+                            <p class="content" id="tempFive"></p>
+                            <p class="content" id="windFive"></p>
+                            <p class="content" id="humidFive"></p>
+                        </div>
                     </div>
                 </div>
             </div>
