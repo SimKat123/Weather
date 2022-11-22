@@ -38,7 +38,7 @@ var humid5El = document.getElementById("humidFive");
 
 // API stuff
 function searchLocation(cityInput) {
-    var url1 ="http://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&appid=" + API;
+    var url1 ="https://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&appid=" + API;
     fetch(url1)
     .then(function(requestInfo){
         // Current forecast presenting city name, date, icon
@@ -115,7 +115,7 @@ searchBtn.addEventListener('click', function() {
 })
 
 function displayIcons(icon) {
-    var url3 = "http://openweathermap.org/img/wn/" + icon +".png";
+    var url3 = "https://openweathermap.org/img/wn/" + icon +".png";
     var weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', url3);
     displayTitle.appendChild(weatherIcon);
@@ -153,7 +153,7 @@ function weather1(day, wind_speed, humidity, icon){
     temp1El.innerHTML = "Temp: " + day + " °F";
     wind1El.innerHTML = "Wind: " + wind_speed + " MPH";
     humid1El.innerHTML = "Humidity: " + humidity + " %";
-    var url3 = "http://openweathermap.org/img/wn/" + icon + ".png";
+    var url3 = "https://openweathermap.org/img/wn/" + icon + ".png";
     var weatherIcon = document.createElement("img");
     weatherIcon.setAttribute("src", url3);
     dayOne.appendChild(weatherIcon);
@@ -163,7 +163,7 @@ function weather2(day, wind_speed, humidity, icon){
     temp2El.innerHTML = "Temp: " + day + " °F";
     wind2El.innerHTML = "Wind: " + wind_speed + " MPH";
     humid2El.innerHTML = "Humidity: " + humidity + " %";
-    var url3 = "http://openweathermap.org/img/wn/" + icon + ".png";
+    var url3 = "https://openweathermap.org/img/wn/" + icon + ".png";
     var weatherIcon = document.createElement("img");
     weatherIcon.setAttribute("src", url3);
     dayTwo.appendChild(weatherIcon);
@@ -173,7 +173,7 @@ function weather3(day, wind_speed, humidity, icon){
     temp3El.innerHTML = "Temp: " + day + " °F";
     wind3El.innerHTML = "Wind: " + wind_speed + " MPH";
     humid3El.innerHTML = "Humidity: " + humidity + " %";
-    var url3 = "http://openweathermap.org/img/wn/" + icon + ".png";
+    var url3 = "https://openweathermap.org/img/wn/" + icon + ".png";
     var weatherIcon = document.createElement("img");
     weatherIcon.setAttribute("src", url3);
     dayThree.appendChild(weatherIcon);
@@ -183,7 +183,7 @@ function weather4(day, wind_speed, humidity, icon){
     temp4El.innerHTML = "Temp: " + day + " °F";
     wind4El.innerHTML = "Wind: " + wind_speed + " MPH";
     humid4El.innerHTML = "Humidity: " + humidity + " %";
-    var url3 = "http://openweathermap.org/img/wn/" + icon + ".png";
+    var url3 = "https://openweathermap.org/img/wn/" + icon + ".png";
     var weatherIcon = document.createElement("img");
     weatherIcon.setAttribute("src", url3);
     dayFour.appendChild(weatherIcon);
@@ -193,7 +193,7 @@ function weather5(day, wind_speed, humidity, icon){
     temp5El.innerHTML = "Temp: " + day + " °F";
     wind5El.innerHTML = "Wind: " + wind_speed + " MPH";
     humid5El.innerHTML = "Humidity: " + humidity + " %";
-    var url3 = "http://openweathermap.org/img/wn/" + icon + ".png";
+    var url3 = "https://openweathermap.org/img/wn/" + icon + ".png";
     var weatherIcon = document.createElement("img");
     weatherIcon.setAttribute("src", url3);
     dayFive.appendChild(weatherIcon);
