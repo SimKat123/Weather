@@ -108,8 +108,7 @@ function displayWeatherInfo(temp, wind_speed, humidity){
 };
 
 // search button event listener
-searchBtn.addEventListener('click', function(event) {
-    event.preventDefault();
+searchBtn.addEventListener('click', function() {
     var city =cityInput.value;
     searchLocation(city);
     searchHistory(city);
